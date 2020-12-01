@@ -1,0 +1,17 @@
+hostname: rke1
+
+rancher:
+  network:
+    interfaces:
+      eth*:
+       dhcp: false
+      eth0:
+       address: 192.168.10.138/24
+       gateway: 192.168.10.3
+    dns:
+     nameservers:
+      - 8.8.8.8
+
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD2DERFX53jxS0KTsHwb8c4UAwj2JRH0zPv/zEts4qe4GqiRyYls6RNyGleU3hWS2z0SXGEZN8/qaxyy5/E0Jh1hJ6hQw9frREAgQtg+Kepiigg8ZbPpTK4qhP8lo3FiSdYdJ5OzXXglSMO+gUcTSL2mSReYxSjtaN1be/ujxePNGDo5IFVjfekMy22iYDUs6zPcc68yUqemuuJ6XVu9nxpUPy0Wc4AXBMcOw+8LTKSJweNjnAiNwrI/aoc6C7WPq4zbOlE7P22j7I1Jd9crSfD1Vejd822ixAe7Gul6kWn5ADr+yNaIFzSpvyL1FueHnZoIbQO3Nb1Lw4mwR5vOM/1 rancher@rancher
+  
